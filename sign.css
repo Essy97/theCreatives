@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600i,700&display=swap');
+
+body {
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  }
+  .container{
+    max-width: 1120px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+/*Header*/
+header{
+  position: absolute;
+  left:10px;
+  right:0px;
+  border-bottom: 1px solid #ffffff;
+  padding: 0px 15px;
+  z-index: 10;
+}
+
+header .row{
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .brand-name a{
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  left: -130px;
+}
+
+header .brand-name a::before{
+  content: '';
+  height: 3px;
+  background-color:#ffffff;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+}
+
+header .navbar ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+header .navbar ul li{
+  display: inline-block;
+  margin-left:35px;
+}
+
+header .navbar ul li a{
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 72px;
+  color: #ffffff;
+  display: block;
+  font-weight: 600;
+  position: relative;
+}
+
+header .navbar ul li a::before{
+  content:'';
+  height: 3px;
+  background-color:#ffffff;
+  width:0%;
+  position: absolute;
+  right:0px;
+  bottom:-1px;
+  transition: all .5s ease;
+}
+
+header .navbar ul li a:hover::before{
+  width: 100%;
+  left: 0;
+}
+
+header .navbar ul li a:active::before{
+  width: 100%;
+  left: 0;
+}
+
+/*Home Section*/
+
+.home{
+  min-height: 100vh;
+  background-image: url(https://c1.wallpaperflare.com/preview/38/821/243/microphone-music-vintage-retro.jpg);
+  background-size:cover;
+  background-position:center;
+  padding: 15px;
+}
+
+.home .full-screen{
+  min-height: 100vh;
+}
+
+.home .home-content{
+
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  
+}
+
+.home .home-content .block{
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-left: 200px;
+  text-align: center;
+  margin-top: 0px;
+  padding-bottom: 200px;
+  
+}
+
+.home .home-content .block p1{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 50px;
+  padding: 0;
+  text-align: center;
+  
+}
+
+.home .home-content .block h1{
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700px;
+  margin:0px;
+  padding: 0;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home .home-content .block .sign-btn{
+  padding-top: 20px;
+  
+}
+
+.home .home-content .block .sign-btn a{
+  border-radius: 3px;
+  color:#ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size:14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all .5s ease;
+  
+}
+
+.home .home-content .block .sign-btn a:hover{
+  background-color: #ffffff;
+  color: #ffffff;
+  
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 149, 0, 0.5);
+}
+
+.wrap{
+    max-width: 350px;
+border-radius: 20px;
+margin: auto;
+background: rgba(0, 0, 0, 0.8);
+box-sizing: border-box;
+padding: 40px;
+color: #fff;
+margin-top: 100px;
+}
+
+h2{
+    text-align: center;
+}
+
+input[type=text], input[type=password]{
+    width: 100%;
+    box-sizing:border-box;
+    padding: 12px;
+background: rgba(0, 0, 0, 0.10);
+outline: none;
+border: none;
+border-bottom: 1px dotted#fff;
+color: #fff;
+border-radius: 5px;
+margin: 5px;
+font-weight: bold;
+}
+
+input[type=submit]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background: #ffb74d;
+    opacity: 0.7;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+input[type=submit]:hover{
+    background: #fb9600;
+    opacity: 0.7;
+}
